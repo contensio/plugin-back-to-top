@@ -1,0 +1,1 @@
+{"name":"contensio/plugin-back-to-top","description":"Back-to-top button plugin for Contensio.","type":"contensio-plugin","license":"MIT","require":{"php":"^8.2","contensio/core":"^2.0"},"autoload":{"psr-4":{"Contensio\\Plugins\\BackToTop\\":"src/"}},"extra":{"contensio":{"providers":["Contensio\\Plugins\\BackToTop\\BackToTopServiceProvider"]}}}
