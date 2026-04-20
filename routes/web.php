@@ -6,6 +6,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['web', 'auth', 'contensio.admin'])
     ->prefix('account/settings')
     ->group(function () {
-        Route::get('back-to-top',  [BackToTopController::class, 'edit'])  ->name('back-to-top.settings');
-        Route::post('back-to-top', [BackToTopController::class, 'update'])->name('back-to-top.settings.update');
+        Route::get('back-to-top',  [BackToTopController::class, 'edit'])  ->name('contensio-back-to-top.settings');
+        Route::post('back-to-top', [BackToTopController::class, 'update'])->name('contensio-back-to-top.settings.update');
     });

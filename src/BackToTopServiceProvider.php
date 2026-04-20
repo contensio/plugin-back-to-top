@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Back to Top — Contensio plugin.
+ * Back to Top - Contensio plugin.
  * https://contensio.com
  *
  * @copyright   Copyright (c) 2026 Iosif Gabriel Chimilevschi
@@ -16,18 +16,20 @@ use Illuminate\Support\ServiceProvider;
 
 class BackToTopServiceProvider extends ServiceProvider
 {
+    protected string $ns = 'contensio-back-to-top';
+
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'back-to-top');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', $this->ns);
 
         $this->registerRoutes();
 
         Hook::add('contensio/admin/settings-cards', function (): string {
-            return view('back-to-top::partials.settings-hub-card')->render();
+            return view($this->ns . '::partials.settings-hub-card')->render();
         });
 
         Hook::add('contensio/frontend/body-end', function (): string {
-            return view('back-to-top::partials.button')->render();
+            return view($this->ns . '::partials.button')->render();
         });
     }
 

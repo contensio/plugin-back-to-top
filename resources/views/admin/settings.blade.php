@@ -21,7 +21,7 @@
 </div>
 @endif
 
-<form method="POST" action="{{ route('back-to-top.settings.update') }}">
+<form method="POST" action="{{ route('contensio-back-to-top.settings.update') }}">
 @csrf
 <div class="space-y-4">
     <div class="bg-white rounded-xl border border-gray-200 p-6 space-y-6">

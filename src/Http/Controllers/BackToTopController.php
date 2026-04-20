@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Back to Top — Contensio plugin.
+ * Back to Top - Contensio plugin.
  * https://contensio.com
  *
  * @copyright   Copyright (c) 2026 Iosif Gabriel Chimilevschi
@@ -18,7 +18,7 @@ class BackToTopController extends Controller
 {
     public function edit()
     {
-        return view('back-to-top::admin.settings', [
+        return view('contensio-back-to-top::admin.settings', [
             'config'    => BackToTopConfig::all(),
             'positions' => array_keys(BackToTopConfig::POSITIONS),
         ]);

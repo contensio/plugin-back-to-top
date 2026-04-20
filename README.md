@@ -6,7 +6,7 @@ Displays a floating circular button that appears when the visitor scrolls past a
 - Configurable position: bottom-right, bottom-left, or bottom-center
 - Configurable scroll threshold (100–2000 px)
 - Smooth scroll using the native `scrollTo` API
-- Passive scroll listener — zero impact on scroll performance
+- Passive scroll listener - zero impact on scroll performance
 - Ember-coloured button to match the Contensio brand
 - Settings hub card in Admin > Settings
 

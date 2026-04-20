@@ -4,7 +4,7 @@
     "description": "Floating scroll-to-top button that appears after scrolling down. Configurable position (right/left).",
     "author": "Contensio",
     "author_url": "https://contensio.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "provider": "Contensio\\Plugins\\BackToTop\\BackToTopServiceProvider",
     "autoload": {
         "psr-4": {
